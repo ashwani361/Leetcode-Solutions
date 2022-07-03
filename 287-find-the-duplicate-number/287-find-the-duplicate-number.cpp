@@ -11,7 +11,6 @@ public:
                 i++;
             }
         }
-        
         for(int i=0; i<n; i++){
             if(v[i]!=i+1){
                 return v[i];
