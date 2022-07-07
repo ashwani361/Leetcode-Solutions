@@ -2,17 +2,17 @@ class Solution {
 public:
     double myPow(double x, int n) {
         double res = 1;
-        while (n) {
-            if (n&1){
-                if(n > 0){
-                    res = res * x;
+        while(n){
+            if(n&1){
+                if(n>0){
+                    res*=x;
                 }
                 else{
-                    res = res / x;
+                    res/=x;
                 }
             }
-            x = x * x;
-            n /= 2;
+            x*=x;
+            n/=2;
         }
         return res;
     }
