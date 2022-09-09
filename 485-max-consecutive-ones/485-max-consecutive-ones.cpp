@@ -9,7 +9,7 @@ public:
                 ans = max(ans, cnt);
             }
             else{
-                
+                ans = max(ans, cnt);
                 cnt = 0;
             }
         }
