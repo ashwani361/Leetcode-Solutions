@@ -5,12 +5,12 @@ public:
         sort(trainers.begin(), trainers.end(), greater<int>());
         
         int count = 0;
-        int j = 0;
+        int i = 0;
         
-        for(int i = 0;i < players.size() && j < trainers.size(); i++){
-            if(players[i] <= trainers[j]){
+        for(int j = 0;j < players.size() && i < trainers.size(); j++){
+            if(players[j] <= trainers[i]){
                 count++;
-                j++;
+                i++;
             }
         }
         
