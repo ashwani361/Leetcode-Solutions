@@ -5,6 +5,7 @@ public:
         vector<vector<int>>ans;
         set<vector<int>>st;
         int n = v.size();
+        sort(v.begin(), v.end());
         
         for(int i=0; i<(1<<n); i++){
             vector<int>t;
@@ -13,7 +14,7 @@ public:
                     t.push_back(v[j]);
                 }
             }
-            sort(t.begin(), t.end());
+            
             st.insert(t);
         }
         
