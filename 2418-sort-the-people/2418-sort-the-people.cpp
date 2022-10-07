@@ -8,13 +8,13 @@ public:
         }
         sort(v.begin(), v.end());
         vector<string>ans;
-        for(int i=0; i<sz; i++){
-            ans.push_back(v[i].second);
+        
+       
+        for(auto i:v){
+            ans.push_back(i.second);
         }
         reverse(ans.begin(), ans.end());
-        // for(auto i:v){
-        //     ans.push_back(i.first);
-        // }
+        
         return ans;
     }
 };
