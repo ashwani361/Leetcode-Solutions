@@ -23,11 +23,12 @@ public:
         int l =0, r = n-1;
         while(l<=r){
             int m = l+(r-l)/2;
+            
             if(v[m]==t){
                 return true;
             }
             
-            if( (v[l] == v[m]) and (v[r] == v[m]) ) {
+            else if( (v[l] == v[m]) and (v[r] == v[m]) ) {
                 ++l; --r;
             }
             else if(v[l]<=v[m]){
